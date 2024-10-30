@@ -1,0 +1,49 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/math.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    
+<div class="container">
+    <div class="header">Calculator</div>
+    <div class="calculator-container">
+        <div class="inputs">
+            <input type="text" name="inputs" id="input-box" placeholder="0" readonly="">
+        </div>
+        <div class="buttons">
+            <div class="button" onclick="clear_input_box()">CE</div>
+            <div class="button" onclick="clear_input_box()">C</div>
+            <div class="button" onclick="remove_last_digit()"> <i class="fas fa-arrow-left"></i> </div>
+            <div class="button" onclick="add_input_text('/')"> <i class="fas fa-divide"></i> </div>
+
+            <div class="button" onclick="add_input_text('7')">7</div>
+            <div class="button" onclick="add_input_text('8')">8</div>
+            <div class="button" onclick="add_input_text('9')">9</div>
+            <div class="button" onclick="add_input_text('*')"> <i class="fas fa-times"></i> </div>
+
+            <div class="button" onclick="add_input_text('4')">4</div>
+            <div class="button" onclick="add_input_text('5')">5</div>
+            <div class="button" onclick="add_input_text('6')">6</div>
+            <div class="button" onclick="add_input_text('+')"> <i class="fas fa-plus"></i> </div>
+
+            <div class="button" onclick="add_input_text('1')">1</div>
+            <div class="button" onclick="add_input_text('2')">2</div>
+            <div class="button" onclick="add_input_text('3')">3</div>
+            <div class="button" onclick="add_input_text('-')"> <i class="fas fa-minus"></i> </div>
+
+            <div class="button" onclick="add_input_text('0')">0</div>
+            <div class="button" onclick="add_input_text('.')">.</div>
+            <div class="button" onclick="add_input_text('%')"> <i class="fas fa-percentage"></i> </div>
+            <div class="button" onclick="calculate_result()"> <i class="fas fa-equals"></i> </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/src.js"></script>
+
+</body></html>
